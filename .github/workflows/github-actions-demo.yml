@@ -10,8 +10,8 @@ name: Java CI with Maven
 
 on: 
   schedule:
-    - cron: "45 23,00 * * *"
-  workflow_dispatch:
+    - cron: "45 01,03 * * *"
+  #workflow_dispatch:
 
 jobs:
   build:
@@ -29,4 +29,3 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
-      #rename
